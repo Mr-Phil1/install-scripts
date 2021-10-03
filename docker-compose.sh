@@ -36,8 +36,8 @@ sudo curl -L ${dockerComposeGithub} -o /usr/local/bin/docker-compose_${dockerCom
 sudo ln -sf /usr/local/bin/docker-compose_${dockerComposeVersion} /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 wait 10
-echo "alias docker-compose=\"sudo docker-compose\"" >> ${HOME}/.bashrc
-clear && . ~/.bashrc
+#echo "alias docker-compose=\"sudo docker-compose\"" >> ${HOME}/.bashrc
+#clear && . ~/.bashrc
 echo "--------------------------------------------------------------------------"
 echo "  Und nun können Sie den Befehl docker-compose ohne "
 echo "  sudo Rechte verwenden."
