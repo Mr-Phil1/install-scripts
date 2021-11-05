@@ -3,7 +3,7 @@
 apps="curl"
 osName="$(uname -s)"
 osArch="$(uname -m)"
-dockerComposeVersion="v2.0.1"
+dockerComposeVersion="v2.1.0"
 dockerComposeGithub="https://github.com/docker/compose/releases/download/${dockerComposeVersion}/docker-compose-${osName}-${osArch}"
 #########################
 #this is the auto-install routine
@@ -14,11 +14,11 @@ if ! dpkg -s ${apps} >/dev/null 2>&1; then
   echo "--------------------------------------------------------------------------"
   echo " Es wird nun ein System-Update gemacht."
   echo "--------------------------------------------------------------------------"
-  sudo apt-get update -y > /dev/null
+  sudo apt-get update -y >/dev/null
   echo "--------------------------------------------------------------------------"
   echo " Nun wird Curl installiert."
   echo "--------------------------------------------------------------------------"
-  sudo apt-get install ${apps} -y > /dev/null
+  sudo apt-get install ${apps} -y >/dev/null
 fi
 
 clear
