@@ -3,7 +3,7 @@
 apps="curl"
 osName="$(uname -s)"
 osArch="$(uname -m)"
-dockerComposeVersion="v2.1.0"
+dockerComposeVersion="v2.2.3"
 dockerComposeGithub="https://github.com/docker/compose/releases/download/${dockerComposeVersion}/docker-compose-${osName}-${osArch}"
 #########################
 #this is the auto-install routine
