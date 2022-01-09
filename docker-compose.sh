@@ -14,14 +14,14 @@ if ! dpkg -s ${apps} >/dev/null 2>&1; then
   echo "--------------------------------------------------------------------------"
   echo " Es wird nun ein System-Update gemacht."
   echo "--------------------------------------------------------------------------"
-  sudo apt-get update -y > /dev/null
+  sudo apt update -y >/dev/null
   echo "--------------------------------------------------------------------------"
   echo " Nun wird Curl installiert."
   echo "--------------------------------------------------------------------------"
-  sudo apt-get install ${apps} -y > /dev/null
+  sudo apt install ${apps} -y >/dev/null
+  clear
 fi
 
-clear
 echo "--------------------------------------------------------------------------"
 echo "              Welcome to the Mr. Phil1 docker-compose-Script"
 echo "--------------------------------------------------------------------------"
