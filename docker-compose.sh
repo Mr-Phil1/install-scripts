@@ -12,11 +12,11 @@ if ! dpkg -s ${apps} >/dev/null 2>&1; then
   echo "--------------------------------------------------------------------------"
   echo "             Welcome to the Mr. Phil1 docker-compose-Script"
   echo "--------------------------------------------------------------------------"
-  echo " Es wird nun ein System-Update gemacht."
+  echo " Now a system update will be done"
   echo "--------------------------------------------------------------------------"
   sudo apt update -y >/dev/null
   echo "--------------------------------------------------------------------------"
-  echo " Nun wird Curl installiert."
+  echo " Now curl will be installed."
   echo "--------------------------------------------------------------------------"
   sudo apt install ${apps} -y >/dev/null
   clear
@@ -25,7 +25,7 @@ fi
 echo "--------------------------------------------------------------------------"
 echo "              Welcome to the Mr. Phil1 docker-compose-Script"
 echo "--------------------------------------------------------------------------"
-echo "  Info über Ihr System"
+echo "  Info about your system"
 echo "  osName:   ${osName}"
 echo "  osArch:   ${osArch}"
 echo "--------------------------------------------------------------------------"
